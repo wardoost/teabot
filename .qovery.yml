@@ -1,15 +1,11 @@
+---
 application:
-  name: coffeebot-app
-  project: coffeebot-project
-  cloud_region: aws/ap-southeast-2
-  publicly_accessible: true
-databases:
-- type: postgresql
-  version: "11.5"
-  name: coffee-db
+  name: "teabot"
+  project: "teabot"
+  organization: "QoveryCommunity"
 routers:
-- name: main
+- name: "main-teabot"
   routes:
-  - application_name: coffeebot-app
+  - application_name: "teabot"
     paths:
-    - /
+    - "/*"
